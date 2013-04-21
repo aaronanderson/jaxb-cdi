@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="#{globalUI.masterTemplate}"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<ui:define name="title">JAXB CDI Index</ui:define>
+
+	<ui:define name="content">
+		
+		<div>
+			<h:link value="companya" outcome="index">
+				<f:param name="c" value="a" />
+			</h:link>
+		</div>
+		
+		<div>
+			<h:link value="companyb" outcome="index">
+				<f:param name="c" value="b" />
+			</h:link>
+		</div>
+		
+	</ui:define>
+</ui:composition>

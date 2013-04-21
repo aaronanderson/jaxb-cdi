@@ -1,0 +1,26 @@
+#header {
+	background: #48a627;
+	width: #{globalUI.headerWidthSize}px;
+	height: #{globalUI.headerHeightSize}px;
+}
+
+#content {
+	background-color: #ffffff;
+	height: #{globalUI.contentHeightSize}px;
+	width: #{globalUI.contentWidthSize}px;
+}
+
+.text {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 15px;
+}
+
+#footer {
+	background-color: #0d82df;
+	color: #BBB;
+	clear: both;
+	height: #{globalUI.footerHeightSize}px;
+	width: #{globalUI.footerWidthSize}px;
+
+}

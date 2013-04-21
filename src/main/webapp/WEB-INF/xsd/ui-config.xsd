@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:jaxb-cdi" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:jaxb-cdi">
+
+	<complexType name="uiConfigType">
+		<sequence>
+			<element ref="tns:GlobalUI" minOccurs="0" maxOccurs="1" />
+			<element ref="tns:BannerUI" minOccurs="1" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<element name="UIConfig" type="tns:uiConfigType" />
+
+	<complexType name="globalUIType">
+		<attribute name="headerHeightSize" type="int" use="required" />
+		<attribute name="headerWidthSize" type="int" use="required" />
+		<attribute name="contentHeightSize" type="int" use="required" />
+		<attribute name="contentWidthSize" type="int" use="required" />
+		<attribute name="footerHeightSize" type="int" use="required" />
+		<attribute name="footerWidthSize" type="int" use="required" />
+		<attribute name="masterTemplate" type="string" use="required" />
+
+	</complexType>
+
+	<element name="GlobalUI" type="tns:globalUIType" />
+
+	<complexType name="bannerUIType">
+		<attribute name="name" type="string" use="required" />
+		<attribute name="domain" type="string" use="required" />
+		<attribute name="slogan" type="string" use="required" />
+		<attribute name="theme" type="string" use="required" />
+	</complexType>
+
+	<element name="BannerUI" type="tns:bannerUIType" />
+
+</schema>

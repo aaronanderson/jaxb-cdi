@@ -1,0 +1,5 @@
+<UIConfig xmlns="urn:jaxb-cdi">
+	<GlobalUI headerHeightSize="128" headerWidthSize="960" contentHeightSize="384" contentWidthSize="960" footerHeightSize="128" footerWidthSize="960" masterTemplate="/WEB-INF/jsf/master.xhtml"/>
+	<BannerUI name="CompanyA" domain="companya.com" slogan="Good Savings" theme="a"/>
+	<BannerUI name="CompanyB" domain="companyb.com" slogan="Good Quality" theme="b"/>
+</UIConfig>

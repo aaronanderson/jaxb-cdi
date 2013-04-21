@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jxb:bindings xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.1">
+	<jxb:bindings schemaLocation="../webapp/WEB-INF/xsd/ui-config.xsd">
+		<jxb:schemaBindings>
+			<jxb:package name="jaxbcdi.xml" />
+		</jxb:schemaBindings>
+
+		<jxb:bindings node="//xs:complexType[@name='globalUIType']">
+			<jxb:class name="GlobalUI" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xs:complexType[@name='bannerUIType']">
+			<jxb:class name="BannerUI" />
+		</jxb:bindings>
+
+	</jxb:bindings>
+</jxb:bindings>
