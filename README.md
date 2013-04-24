@@ -1,3 +1,9 @@
+## Running the Application
+
+mvn clean install jetty:run
+
+access the application at http://localhost:8080/jaxb-cdi
+
 ## About
 
 [jaxb-cdi]  is a contrived sample application to demonstrate contorting JAXB to leverage objects (beans) managed by CDI. A technique that this project presents is to define a domain specific application model in XML, use JAXB to fabricate a Java object model, and then use CDI to wire the Java model together. While the trend in JavaEE is to move away from XML this fabrication technique allows the melding of execution model and logic in a domain specific fashion which may be compelling in certain scenarios. It is worth noting that CDI Normal scopes expect one instance of a bean signature per scope which would limit the usefulness of processing an XML document with repetitive elements but CDI supports custom psudo-scopes where this constraint does not apply.
