@@ -1,6 +1,6 @@
 ## Running the Application
 
-mvn clean install jetty:run
+mvn clean install jetty:start
 
 access the application at http://localhost:8080/jaxb-cdi
 
